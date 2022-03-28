@@ -1,5 +1,10 @@
-var laminas = 800;
+var boton = document.getElementById("poner");
+boton.addEventListener("click", poner);
+var yaTengo =[]; //array que me muestra aquellas fichas que ya tengo
 
-for(var l = 0; l<laminas; l++){
-    document.write(l + "<br/>")
+function poner()
+{
+    var laminaobtenida = document.getElementById("laminita")
+    yaTengo.push (laminaobtenida.value);
+    resultado.innerHTML = "la lamina numero " + yaTengo + " se ha agregado con exito"
 }
