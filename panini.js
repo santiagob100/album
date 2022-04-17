@@ -1,10 +1,11 @@
 var boton = document.getElementById("poner");
 boton.addEventListener("click", poner);
-var yaTengo =[]; //array que me muestra aquellas fichas que ya tengo
+var jugadoresYA =[]; //array que me muestra aquellas fichas que ya tengo
+var numeroCaja = document.getElementById("laminita");
 
-function poner()
-{
-    var laminaobtenida = document.getElementById("laminita")
-    yaTengo.push (laminaobtenida.value);
-    resultado.innerHTML = "la lamina numero " + yaTengo + " se ha agregado con exito"
+function poner(){
+    
+    jugadoresYA.push(numeroCaja.value);
+    resultado.innerHTML = "El jugador numero " + numeroCaja.value + " se ha agregado a la lista";
+    lista.innerHTML = "Actualmente tienes: " + jugadoresYA;
 }
