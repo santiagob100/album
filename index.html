@@ -3,17 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Un programa que ayuda a llenar el album</title>
+    <style>
+        *{background-color:gainsboro}
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+          }
+          #laminita{
+              background-color: black;
+              color: white;
+          }
+    </style>
 </head>
 <body>
-    <H1>Estas laminas son las que te faltan</H1>
-    <h2>Escribe la lamina que conseguiste hoy</h2>
-    <p>
-        <input type="number" id="laminita" />
-        <input type="button" value="poner en la lista" id="poner"/>
-    </p>
-    <p id="resultado"> </p>
-    <p id="lista"> </p>
-    <script src="jugadores.js"></script>
-    <script src="panini.js"></script>
+    <div class="container">
+        <H1>LLenemos el album panini juntos</H1>
+        <p>
+            <input type="number" id="laminita" />
+            <input type="button" value="poner en la lista" id="poner"/>
+        </p>
+        <p id="resultado"> </p>
+        <p id="lista"> </p>
+        <script src="jugadores.js"></script>
+        <script src="panini.js"></script>
+    </div>
+    
 </body>
 </html>
